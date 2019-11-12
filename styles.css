@@ -44,7 +44,7 @@ body > header{
     background-color: rgb(212, 86, 86);
     color:white;
 }
-#div-container{
+#form{
     margin:0px 10px 0px 0px;
     display:flex;
     flex-direction: row;

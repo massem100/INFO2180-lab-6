@@ -3,8 +3,11 @@
 <head> 
     <title> Superhero Search </title>
     <link rel= "stylesheet" href ="styles.css"/>
-    <!-- add meta data   -->
-    <!-- add responsive command -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Avenger Search">
+    
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="app.js"></script>
 </head>
@@ -14,18 +17,19 @@
     </header>
     <article class= "article">
         <h4 id = "instruction" > Search by full name or Alias</h4>
-    <div id = "div-container">
-        <input id = "input-field" type = "text" value= "Captain America"></input>
-        <button id ="search" type="submit">Search </button></div>
     
-    </div>
+        <form id = "form" action="superheroes.php" method="GET"> 
+        <input id="input-field" type="text" value="Captain America" action="superheroes.php" method="GET"></input>
+        <button id ="search" type="submit">Search </button>
+        </form>
+    
+   
     <div id = "results"> 
         <h2> RESULT</h2>
         <hr/>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellendus, nostrum beatae quod amet maxime adipisci dolor ut consequatur 
-        quia omnis, optio quo nobis vel. Ab rerum aut provident quibusdam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore fugit dolores, perferendis odio,
-            exercitationem repudiandae, praesentium neque ullam at minima sunt? Natus vero earum 
-            fugiat repellendus voluptatum dolor maxime ex?</p>
+        
+        <p> 
+        </p>
     </div>
 </article>
 

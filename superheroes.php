@@ -1,4 +1,4 @@
-<?php header('Access-Control-Allow-Origin: *'); ?>
+
 <?php
 
 $superheroes = [
@@ -64,14 +64,35 @@ $superheroes = [
   ], 
 ];
 
+
 ?>
+<?php if(!$_GET): ?>
+	<ul>
+	<?php foreach ($superheroes as $superhero): ?>
+	<li><?= $superhero['alias']; ?></li>
+	<?php endforeach; ?>
+	</ul>
+	<?php else: 
+	
+	$data = $_GET['query'];
+	if (($data) === 10):
+	$data = filter_var($data, FILTER_SANITIZE_STRING);
+	$finder=false;
+	foreach ($superheroes as $superhero):
+	if ($superhero['alias'] === $data || $superhero['name'] === $data):
+	?>
+	<h3><?= $superhero['alias'];?></h3>
+	<h4>A.K.A. <?= $superhero['name'];?></h4>
+	<p><?= $superhero['biography'];?></p> 
+	<?php 
+	$finder = true;
+	break; 
+	endif;
+	endforeach;
+	if (!$finder):?>
+	<p >SUPERHERO NOT FOUND</p>
+	<?php endif;
+	endif; 
+	endif;
+	?>
 
-<ul>
-<?php foreach ($superheroes as $superhero): ?>
-  <li><?= $superhero['alias']; ?></li>
-<?php endforeach; ?>
-</ul>
-
-
-
-<!-- add validation conditions -->
