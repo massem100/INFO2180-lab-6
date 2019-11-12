@@ -1,3 +1,4 @@
+<?php header('Access-Control-Allow-Origin: *'); ?>
 <?php
 
 $superheroes = [
@@ -70,3 +71,7 @@ $superheroes = [
   <li><?= $superhero['alias']; ?></li>
 <?php endforeach; ?>
 </ul>
+
+
+
+<!-- add validation conditions -->
