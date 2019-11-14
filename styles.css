@@ -1,70 +1,76 @@
-
-.body{
+body {
     display: flex;
     display: -webkit-flex;
-    display:- -moz-flex;
+    display: - -moz-flex;
     flex-direction: column;
-    margin:0px; 
-    width:100%;
-    height:500px;
-    background-color:  rgb(252, 217, 213);
-    
-  
+    margin: 0px;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(252, 217, 213);
+
+
 }
-.article{
+
+main {
     display: flex;
-    align-items: center;
+    margin: 10px 0px 0px 0px;
 }
-body > header{
-    margin:0px; 
-    padding: 40px; 
-    width: 100%; 
-    height:40px;
+
+body>header {
+    margin: 0px;
+    padding: 40px;
+    width: 100%;
+    height: 40px;
     background-color: rgb(250, 163, 153);
     color: white;
     text-align: center;
     vertical-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px; 
+    font-size: 15px;
     text-transform: uppercase;
-   
-}
-#input-field{
-    margin:0px 5px 10px 10px;
-    width: 350px; 
-    height: 30px;
-    
+    position: relative;
+
 }
 
-#search{
+#inputbox {
+    margin: 0px 5px 10px 10px;
+    width: 350px;
+    height: 30px;
+
+}
+
+#search {
     margin: 0px 5px 5px 0px;
     width: 80px;
     height: 35px;
-    padding:0px;
+    padding: 0px;
     background-color: rgb(212, 86, 86);
-    color:white;
+    color: white;
 }
-#form{
-    margin:0px 10px 0px 0px;
-    display:flex;
+
+#Sform {
+    margin: 10px 10px 0px 0px;
+    display: flex;
     flex-direction: row;
-    width:40%;
+    width: 40%;
     height: inherit;
     /* background-color: sandybrown; */
 
 }
-#instruction {
-    margin: 0px 0px 5px 20px;
-    /* padding:20px; */
-    justify-content: left;
-}
 
-#results{
-    margin: 0px 40px 0px 0px;
+#result {
+    margin: 10px 40px 0px 0px;
     text-align: justify;
     text-justify: inter-word;
-    width:60%;
-    height:inherit;
-    /* background-color: rgb(96, 227, 244); */
+    width: 50%;
+    height: inherit;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.redError {
+    color: red;
 }
